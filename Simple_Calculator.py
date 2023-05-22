@@ -1,3 +1,7 @@
+#Vargas, Ruben A.
+#BSCPE 1-4
+#Object-Oriented Programming
+
 #Pseudocode
 #Prompting the user to select an operation and then input it
 #Collect the first number
