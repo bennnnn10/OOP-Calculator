@@ -5,3 +5,6 @@ class exceptError:
 
     def zero_error(self):
         print("Error: Cannot divide by zero.")
+
+    def value_error(self):
+        print("Error: Invalid input.")
