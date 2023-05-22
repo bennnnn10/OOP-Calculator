@@ -22,3 +22,6 @@ class Interface:
         else:
             print("Thank you!")
             exit()
+
+    def calculate_result(self, result):
+        print("The resuli is", result)
