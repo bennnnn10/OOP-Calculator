@@ -11,11 +11,14 @@ def calculator():
     user = Interface()
     error = exceptError()
     
-#Pseudocode
-#Prompting the user to select an operation and then input it
-#Collect the first number
-#Second number
-#Execute Operations
-    #Default Value
-#Result
-#Request if the user wants to make another computation.
+    try:
+        #Pseudocode
+        #Prompting the user to select an operation and then input it
+        math_operation = user.choosing_operations()
+        
+        #Collect the first number
+        #Second number
+        #Execute Operations
+            #Default Value
+        #Result
+        #Request if the user wants to make another computation.
