@@ -14,3 +14,11 @@ class Interface:
     def choosing_second_number(self):
         second_number = float(input("Enter the second number: "))
         return second_number
+    
+    def do_it_again(self):
+        try_again = input("Would you like to make another calculation? (y/n): ")
+        if try_again.lower()  == "y":
+            return True
+        else:
+            print("Thank you!")
+            exit()
