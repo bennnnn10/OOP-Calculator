@@ -15,9 +15,13 @@ def calculator():
         #Pseudocode
         #Prompting the user to select an operation and then input it
         math_operation = user.choosing_operations()
-        
+
         #Collect the first number
+        first_number = user.choosing_first_number()
+
         #Second number
+        second_number = user.choosing_second_number()
+        
         #Execute Operations
             #Default Value
         #Result
