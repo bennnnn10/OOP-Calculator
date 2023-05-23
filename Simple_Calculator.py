@@ -48,4 +48,8 @@ def calculator():
         error.zero_error()
         calculator()
 
+    except ValueError:
+        error.value_error()
+        calculator()
+
 calculator()
