@@ -11,18 +11,31 @@ def calculator():
     user = Interface()
     error = exceptError()
     
-    try:
         #Pseudocode
         #Prompting the user to select an operation and then input it
-        math_operation = user.choosing_operations()
+    math_operation = user.choosing_operations()
 
         #Collect the first number
-        first_number = user.choosing_first_number()
+    first_number = user.choosing_first_number()
 
         #Second number
-        second_number = user.choosing_second_number()
+    second_number = user.choosing_second_number()
         
         #Execute Operations
-            #Default Value
+    result = None    #Default Value
+    if math_operation == 1:
+         result = calcu.addition()
+    elif math_operation == 2:
+        result = calcu.subtraction()
+    elif math_operation == 3:
+        result = calcu.multiplication()
+    elif math_operation == 4:
+        result = calcu.division()
+    else:
+        error.invalid_error()
+        calculator()
+
         #Result
         #Request if the user wants to make another computation.
+
+calculator()
