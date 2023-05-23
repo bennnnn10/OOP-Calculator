@@ -1,10 +1,15 @@
+from termcolor import colored
+
 class exceptError:
 
     def invalid_error(self):
-        print("Invalid operation number.")
+        print()
+        print(colored("Invalid operation number.\n".center(75), "red"))
 
     def zero_error(self):
-        print("Error: Cannot divide by zero.")
+        print()
+        print(colored("Error: Cannot divide by zero.\n".center(75), "red"))
 
     def value_error(self):
-        print("Error: Invalid input.")
+        print()
+        print(colored("Error: Invalid input.\n".center(75), "red"))
