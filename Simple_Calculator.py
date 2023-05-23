@@ -39,5 +39,8 @@ def calculator():
     user.calculate_result(result)
 
         #Request if the user wants to make another computation.
+    again = user.do_it_again()
+    if again:
+        calculator()
 
 calculator()
