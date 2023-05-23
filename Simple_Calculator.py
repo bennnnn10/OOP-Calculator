@@ -36,6 +36,8 @@ def calculator():
         calculator()
 
         #Result
+    user.calculate_result(result)
+
         #Request if the user wants to make another computation.
 
 calculator()
