@@ -24,13 +24,13 @@ def calculator():
         #Execute Operations
     result = None    #Default Value
     if math_operation == 1:
-         result = calcu.addition()
+         result = calcu.addition(first_number, second_number)
     elif math_operation == 2:
-        result = calcu.subtraction()
+        result = calcu.subtraction(first_number, second_number)
     elif math_operation == 3:
-        result = calcu.multiplication()
+        result = calcu.multiplication(first_number, second_number)
     elif math_operation == 4:
-        result = calcu.division()
+        result = calcu.division(first_number, second_number)
     else:
         error.invalid_error()
         calculator()

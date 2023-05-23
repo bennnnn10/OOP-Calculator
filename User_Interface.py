@@ -24,4 +24,4 @@ class Interface:
             exit()
 
     def calculate_result(self, result):
-        print("The resuli is", result)
+        print("The result is", result)
