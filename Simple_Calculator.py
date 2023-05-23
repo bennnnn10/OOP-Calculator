@@ -5,6 +5,7 @@
 from Class_Calculator import Calculator
 from User_Interface import Interface
 from Errors import exceptError
+from Header_Design import Design
 
 def calculator():
     calcu = Calculator()
