@@ -8,6 +8,7 @@ This is a simple Python calculator program. Users can carry out fundamental math
 - Subtraction: Subtract one number from another.
 - Multiplication: Multiply two numbers together.
 - Division: Divide one number by another.
+- Modulo: Used to find the remainder during a division of two numbers.
 
 ## Errors
 This code assists in making errors adequately visible to users and uncomplicated enough for the average individual to understand.
@@ -35,7 +36,7 @@ pip install termcolor
 ```
 
 - The software must then be run after that.
-- Create five (5) .py files, then;
+- Create seven (7) .py files, then;
 - Copy the codes from my github repository and then paste it into the.py files you've made.
 - Try launching the program.
 - Enjoy!
