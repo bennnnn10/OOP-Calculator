@@ -7,12 +7,14 @@ from User_Interface import Interface
 from Errors import exceptError
 from Header_Design import Design
 from BenInterface import BenUserInterface
+from NewCalculatorFunction import NewFunction
 
 def calculator():
     calcu = Calculator()
     user = Interface()
     error = exceptError()
     ben = BenUserInterface()
+    new = NewFunction()
     
     try:
         #Pseudocode
@@ -31,13 +33,13 @@ def calculator():
         #Execute Operations
         result = None    #Default Value
         if math_operation == 1:
-            result = calcu.addition(first_number, second_number)
+            result = new.addition(first_number, second_number)
         elif math_operation == 2:
-            result = calcu.subtraction(first_number, second_number)
+            result = new.subtraction(first_number, second_number)
         elif math_operation == 3:
-            result = calcu.multiplication(first_number, second_number)
+            result = new.multiplication(first_number, second_number)
         elif math_operation == 4:
-            result = calcu.division(first_number, second_number)
+            result = new.division(first_number, second_number)
         else:
             error.invalid_error()
             calculator()
