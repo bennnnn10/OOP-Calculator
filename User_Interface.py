@@ -7,9 +7,10 @@ class Interface:
         print("✹" * 78)
         print("\n")
         print(colored("Please choose an operation\n".center(75), "yellow"))
-        print(colored("Addition(1), Subtraction(2), Multiplication(3), or Division(4)\n".center(75), "yellow"))
-        print(colored("Choose one of the four math operations (1-4): ".center(75), "cyan"))
+        print(colored("Addition(1), Subtraction(2), Multiplication(3), Division(4), or Modulo(5)\n".center(75), "yellow"))
+        print(colored("Choose one of the four math operations (1-5): ".center(75), "cyan"))
         math_operation = int(input("".center(37)))
+        print("\n")
         return math_operation
 
     def choosing_first_number(self):
@@ -21,13 +22,14 @@ class Interface:
         return second_number
     
     def do_it_again(self):
+        print("✹" * 78)
         print("\n")
         try_again = input(colored("Would you like to make another calculation? (y/n): ", "yellow"))
         print("\n")
+        print("✹" * 78)
         if try_again.lower()  == "y":
             return True
         else:
-            print("✹" * 78)
             print("\n")
             print(pyfiglet.figlet_format("Thank you!".center(11), justify="center"))
             exit()
