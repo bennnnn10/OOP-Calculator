@@ -10,6 +10,12 @@ class BenUserInterface(Interface):
         print("\n")
         return
     
+    def choosing_first_number(self):
+        return super().choosing_first_number()
+    
+    def choosing_second_number(self):
+        return super().choosing_second_number()
+
     def calculate_result(self, result):
         print("\n")
         print(colored("Initializing completed...", "cyan"))

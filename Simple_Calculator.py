@@ -40,6 +40,8 @@ def calculator():
             result = new.multiplication(first_number, second_number)
         elif math_operation == 4:
             result = new.division(first_number, second_number)
+        elif math_operation == 5:
+            result = new.modulo(first_number, second_number)
         else:
             error.invalid_error()
             calculator()
