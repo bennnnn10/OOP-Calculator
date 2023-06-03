@@ -6,22 +6,24 @@ from Class_Calculator import Calculator
 from User_Interface import Interface
 from Errors import exceptError
 from Header_Design import Design
+from BenInterface import BenUserInterface
 
 def calculator():
     calcu = Calculator()
     user = Interface()
     error = exceptError()
+    ben = BenUserInterface()
     
     try:
         #Pseudocode
         #Prompting the user to select an operation and then input it
-        math_operation = user.choosing_operations()
+        math_operation = ben.choosing_operations()
 
         #Collect the first number
-        first_number = user.choosing_first_number()
+        first_number = ben.choosing_first_number()
 
         #Second number
-        second_number = user.choosing_second_number()
+        second_number = ben.choosing_second_number()
         
         #Execute Operations
         result = None    #Default Value
@@ -38,10 +40,10 @@ def calculator():
             calculator()
 
         #Result
-        user.calculate_result(result)
+        ben.calculate_result(result)
 
         #Request if the user wants to make another computation.
-        again = user.do_it_again()
+        again = ben.do_it_again()
         if again:
             calculator()
 
