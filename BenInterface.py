@@ -5,5 +5,14 @@ from User_Interface import Interface
 class BenUserInterface(Interface):
     
     def greetings(self):
-        print("Welcome aboard! Codeperman at your service.")
+        print("\n")
+        print(colored("Welcome aboard! Codeperman at your service.".center(75), "cyan"))
+        print("\n")
         return
+    
+    def calculate_result(self, result):
+        print("\n")
+        print(colored("Initializing completed...", "cyan"))
+        print("\n")
+        print("\033[;1;92;3mThe total computed is", result, "\033[0m")
+        print("\n")

@@ -16,6 +16,9 @@ def calculator():
     
     try:
         #Pseudocode
+        #Codeperman
+        ben.greetings()
+
         #Prompting the user to select an operation and then input it
         math_operation = ben.choosing_operations()
 
